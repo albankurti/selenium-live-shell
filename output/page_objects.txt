@@ -1,2 +1,0 @@
-public static final String CMP_SALESSERVICING_COMPANIES_ENTERCOMPANYSEARCH="SalesServicing.Companies.EnterCompanySearch.XPath";
-public static final String CMP_SALESSERVICING_COMPANIES_LENDERS_CLICKSORTCOMPANYNAME="SalesServicing.Companies.Lenders.ClickSortCompanyName.XPath";

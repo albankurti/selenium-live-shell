@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'maven-publish'
+    id "io.freefair.lombok" version "6.3.0"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url = uri('https://repo.maven.apache.org/maven2/')
+    }
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.1.2'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.1.2'
+    implementation 'junit:junit:4.13.2'
+    implementation 'org.apache.poi:poi:5.0.0'
+    implementation 'org.apache.poi:poi-ooxml:5.0.0'
+    implementation 'com.relevantcodes:extentreports:2.41.2'
+    implementation 'commons-io:commons-io:20030203.000550'
+    implementation 'org.testng:testng:7.5'
+}
+
+application{
+    mainClass = "com.invicto.LiveShell"
+}
+
+run{
+    standardInput = System.in
+}
+
+group = 'selenium'
+version = '0.0.1-SNAPSHOT'
+description = 'ProjectImplementation'
+java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+test {
+    useTestNG()
+}

@@ -1,0 +1,2 @@
+SalesServicing.Companies.EnterCompanySearch.XPath=//input[@placeholder='Search this list...']
+SalesServicing.Companies.Lenders.ClickSortCompanyName.XPath=//span[@title='Company Name']
